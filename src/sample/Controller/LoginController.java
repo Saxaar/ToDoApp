@@ -1,4 +1,4 @@
-package Controller;
+package sample.Controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -29,6 +29,9 @@ public class LoginController {
     @FXML
     void initialize() {
 
+        loginButton.setOnAction(event -> {
+            System.out.println("Login clicked");
+        });
 
     }
 }
