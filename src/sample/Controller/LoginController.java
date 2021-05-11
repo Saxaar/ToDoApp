@@ -35,6 +35,12 @@ public class LoginController {
     void initialize() {
         String loginText = loginUsername.getText().trim();
         String loginPwd = loginPassword.getText().trim();
+
+        loginButton.setOnAction(event -> {
+
+        });
+
+
         loginSignUpButton.setOnAction(event ->{
             //Перенесем Юзера в окно регистрации
             loginSignUpButton.getScene().getWindow().hide();
@@ -64,5 +70,10 @@ public class LoginController {
 
     private void loginUser(String userName, String password) {
         // Сверяем введенные данные с БД
+        if (!userName.equals("") || !password.equals("")) {
+
+        }else {
+            //надо хаполнить поля
+        };
     }
 }
